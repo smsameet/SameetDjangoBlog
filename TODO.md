@@ -4,3 +4,4 @@
 - [x] startapp blog and create home view.
 - [x] migration models and createsuperuser.
 - [x] create article model and register to admin panel.
+- [x] adding requirements.
