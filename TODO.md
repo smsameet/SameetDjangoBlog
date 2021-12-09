@@ -2,3 +2,4 @@
 - [x] creating virtualenv and startproject.
 - [x] adding gitignore file.
 - [x] startapp blog and create home view.
+- [x] migration models and createsuperuser.
