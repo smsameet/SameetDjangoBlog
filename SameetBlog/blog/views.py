@@ -4,4 +4,4 @@ from django.shortcuts import render
 def home(request):
     ''' this is function of the blog home. '''
     context = {}
-    return render(request, 'home/base.html', context)
+    return render(request, 'blog/base.html', context)
