@@ -9,3 +9,4 @@
 - [x] adding license.
 - [x] config display article on admin panel.
 - [x] config upload images for articles.
+- [x] show articles to templates.
