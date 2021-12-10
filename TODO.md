@@ -7,3 +7,4 @@
 - [x] adding requirements.
 - [x] updating readme file.
 - [x] adding license.
+- [x] config display article on admin panel.
