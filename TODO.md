@@ -10,3 +10,4 @@
 - [x] config display article on admin panel.
 - [x] config upload images for articles.
 - [x] show articles to templates.
+- [x] adding bootstrap and style to templates.

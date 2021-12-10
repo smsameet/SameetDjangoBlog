@@ -1,0 +1,16 @@
+:root {
+	--TextColor: #abb2bf;
+	--HeaderColor: #d19a66;
+	--White: #ffffff;
+	--Black: #000000;
+	--FontFamily: Vazir, serif;
+	--FontSize: 16px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	direction: rtl;
+	font-size: var(--FontSize);
+	font-family: var(--FontFamily);
+	background-color: #1e2127;
+}
