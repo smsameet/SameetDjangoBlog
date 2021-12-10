@@ -11,3 +11,4 @@
 - [x] config upload images for articles.
 - [x] show articles to templates.
 - [x] adding bootstrap and style to templates.
+- [x] config timezone and language admin panel.
