@@ -12,3 +12,4 @@
 - [x] show articles to templates.
 - [x] adding bootstrap and style to templates.
 - [x] config timezone and language admin panel.
+- [x] create new file and view for articles (connecting articles to article).
