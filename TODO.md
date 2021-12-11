@@ -13,3 +13,4 @@
 - [x] adding bootstrap and style to templates.
 - [x] config timezone and language admin panel.
 - [x] create new file and view for articles (connecting articles to article).
+- [x] config template style (main content).
