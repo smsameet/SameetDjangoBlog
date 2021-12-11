@@ -5,7 +5,7 @@ from . import models
 def home(request):
     ''' this is function of the blog home. '''
     context = {
-        "articles": models.Article.objects.all()
+        "contents": models.HomeContent.objects.all().order_by('-published')
     }
     return render(request, 'blog/base.html', context)
 

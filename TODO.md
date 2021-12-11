@@ -14,3 +14,4 @@
 - [x] config timezone and language admin panel.
 - [x] create new file and view for articles (connecting articles to article).
 - [x] config template style (main content).
+- [x] creating home content (models).

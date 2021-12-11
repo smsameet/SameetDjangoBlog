@@ -19,3 +19,21 @@ class ArticleAdmin(admin.ModelAdmin):
         '-published'
     ]
 admin.site.register(models.Article, ArticleAdmin)
+
+class HomeContentConfig(admin.ModelAdmin):
+    list_display = (
+        'title',
+    )
+    list_filter = (
+        'title',
+    )
+    prepopulated_fields = {
+        'slug': ('title',)
+    }
+    search_fields = [
+        'title', 'body'
+    ]
+    ordering = [
+        'title'
+    ]
+admin.site.register(models.HomeContent, HomeContentConfig)
