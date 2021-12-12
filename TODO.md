@@ -16,3 +16,4 @@
 - [x] config template style (main content).
 - [x] creating home content (models).
 - [x] config header template.
+- [ ] create blog view , url , template.

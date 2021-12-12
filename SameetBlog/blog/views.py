@@ -15,3 +15,10 @@ def details(request, slug):
         "article": get_object_or_404(models.Article, slug=slug)
     }
     return render(request, "blog/details.html", context)
+
+def blog(request):
+    ''' this is function of the site (blog)'''
+    context = {
+        "articles": models.Article.objects.filter(status="P").order_by('-published')
+    }
+    return render(request, "blog/blog.html", context)
