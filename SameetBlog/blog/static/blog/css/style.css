@@ -5,6 +5,7 @@
 	--Black: #000000;
 	--FontFamily: Vazir, serif;
 	--FontSize: 16px;
+	--LinkHover: #579BD3;
 }
 /* elements */
 body {
@@ -14,6 +15,13 @@ body {
 	font-size: var(--FontSize);
 	font-family: var(--FontFamily);
 	background-color: #1e2127;
+}
+a {
+	color: var(--TextColor);
+	text-decoration: none;
+}
+a :hover {
+	color: var(--LinkHover);
 }
 /* ides */
 #article {
