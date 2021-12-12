@@ -29,3 +29,7 @@ body {
 #article .card img {
 	padding: 20px;
 }
+/* clases */
+.navbar {
+	font-size: 1.4rem;
+}
