@@ -17,3 +17,4 @@
 - [x] creating home content (models).
 - [x] config header template.
 - [x] create blog view , url , template.
+- [x] creagin topics model and register to admin panel.

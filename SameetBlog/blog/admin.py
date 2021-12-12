@@ -34,3 +34,15 @@ class HomeContentConfig(admin.ModelAdmin):
         'title'
     ]
 admin.site.register(models.HomeContent, HomeContentConfig)
+
+class TopicsConfig(admin.ModelAdmin):
+    list_display = (
+        'title', 'slug', 'position'
+    )
+    list_filter = (
+        'title',
+    )
+    search_fields = [
+        'title', 'position', 'slug'
+    ]
+admin.site.register(models.Topics, TopicsConfig)

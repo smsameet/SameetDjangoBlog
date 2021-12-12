@@ -2,6 +2,18 @@ from django.db import models
 from django.utils import timezone
 
 # Create your models here.
+
+class Topics(models.Model):
+    title = models.CharField(verbose_name="عنوان", max_length=200)
+    slug = models.SlugField(verbose_name="ادرس", max_length=200)
+    position = models.IntegerField(verbose_name="به ترتیب از ")
+
+    def __str__(self):
+        return f"{self.title}"
+
+    class Meta:
+        verbose_name = "تاپیک"
+        verbose_name_plural = "تاپیک ها"
 class Article(models.Model):
     ArticleStatus =  (
         ("P", "Published"),
@@ -9,6 +21,7 @@ class Article(models.Model):
     )
     title = models.CharField(verbose_name="عنوان", max_length=200)
     slug = models.SlugField(verbose_name="ادرس مقاله", max_length=200)
+    topics = models.ManyToManyField(Topics, verbose_name="تاپیک")
     body = models.TextField(verbose_name="محتوا", null=True, blank=True)
     thumbnail = models.ImageField(verbose_name="تصویر بند انگشتی", upload_to="images")
     published = models.DateTimeField(verbose_name="زمان انتشار", default=timezone.now)
