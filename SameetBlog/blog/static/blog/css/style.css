@@ -6,8 +6,17 @@
 	--FontFamily: Vazir, serif;
 	--FontSize: 16px;
 	--LinkHover: #579BD3;
+	--SelectionText: #d19a66;
 }
 /* elements */
+::-moz-selection { /* Code for Firefox */
+	background: var(--SelectionText);
+	color: #ffff;
+}
+::selection {
+	background: var(--SelectionText);
+	color: #ffff;
+}
 body {
 	margin: 0;
 	padding: 0;
