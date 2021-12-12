@@ -26,7 +26,7 @@ class Article(models.Model):
 class HomeContent(models.Model):
     title = models.CharField(verbose_name="عنوان", max_length=200, null=True, blank=True)
     slug = models.SlugField(verbose_name="ادرس صفحه", max_length=200, null=False, blank=False)
-    body = models.TextField(verbose_name="محتوا", max_length=200, null=True, blank=True)
+    body = models.TextField(verbose_name="محتوا", null=True, blank=True)
     thumbnail = models.ImageField(verbose_name="تصویر بند انگشتی", upload_to="images")
     published = models.DateTimeField(verbose_name="زمان انتشار", default=timezone.now)
 
