@@ -18,3 +18,5 @@
 - [x] config header template.
 - [x] create blog view , url , template.
 - [x] creagin topics model and register to admin panel.
+- [x] config details template.
+- [x] config topics and show to templates.

@@ -14,6 +14,7 @@ class Topics(models.Model):
     class Meta:
         verbose_name = "تاپیک"
         verbose_name_plural = "تاپیک ها"
+
 class Article(models.Model):
     ArticleStatus =  (
         ("P", "Published"),

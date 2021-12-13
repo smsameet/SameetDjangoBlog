@@ -17,6 +17,50 @@
 	background: var(--SelectionText);
 	color: #ffff;
 }
+/* ides */
+#article {
+	margin: 20px;
+}
+#article .card {
+	background-color: #1e2127;
+	box-shadow: 0 7px 14px rgba(0,0,0,.25),0 5px 5px rgba(0,0,0,.22);
+	color: var(--TextColor);
+	margin-right: auto;
+	margin-left: auto;
+}
+#article .card img {
+	padding: 20px;
+}
+#thumbnail img{
+	display: flex;
+	margin: auto;
+	width: 50%;
+}
+#content {
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+}
+#ArticleTitle {
+	color: var(--HeaderColor);
+}
+#ArticleContent {
+	color: var(--TextColor);
+}
+#information {
+	border-top: 2px solid var(--TextColor);
+	margin-top: 10%;
+	margin-bottom: 100px;
+	padding-top: 10px;
+}
+#information *{
+
+	color: var(--HeaderColor);
+}
+/* clases */
+.navbar {
+	font-size: 1.4rem;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -32,21 +76,8 @@ a {
 a :hover {
 	color: var(--LinkHover);
 }
-/* ides */
-#article {
-	margin: 20px;
-}
-#article .card {
-	background-color: #1e2127;
-	box-shadow: 0 7px 14px rgba(0,0,0,.25),0 5px 5px rgba(0,0,0,.22);
-	color: var(--TextColor);
-	margin-right: auto;
-	margin-left: auto;
-}
-#article .card img {
-	padding: 20px;
-}
-/* clases */
-.navbar {
-	font-size: 1.4rem;
+h1, h2, h3, h4, h5, h6 {
+	padding: 5px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 20px;
 }

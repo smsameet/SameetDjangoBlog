@@ -12,7 +12,8 @@ def home(request):
 def details(request, slug):
     ''' this is function of the blog details articles. '''
     context = {
-        "article": get_object_or_404(models.Article, slug=slug)
+        "article": get_object_or_404(models.Article, slug=slug),
+        "topics": models.Topics.objects.all()
     }
     return render(request, "blog/details.html", context)
 

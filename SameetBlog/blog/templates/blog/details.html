@@ -2,7 +2,8 @@
 
 {% load static %}
 
-{% block title %}صفحه اصلی{% endblock %}
+{% block title %}{{ article.title }}{% endblock %}
 {% block body %}
+	{% block header %}{% include 'blog/header.html' %}{% endblock %}
 	{% block main %}{% include 'blog/post.html' %}{% endblock %}
 {% endblock %}
