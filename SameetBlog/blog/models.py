@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class Topics(models.Model):
     title = models.CharField(verbose_name="عنوان", max_length=200)
-    slug = models.SlugField(verbose_name="ادرس", max_length=200)
+    slug = models.SlugField(verbose_name="ادرس", max_length=200, unique=True)
     position = models.IntegerField(verbose_name="به ترتیب از ")
 
     def __str__(self):
@@ -20,7 +20,7 @@ class Article(models.Model):
         ("D", "Draft")
     )
     title = models.CharField(verbose_name="عنوان", max_length=200)
-    slug = models.SlugField(verbose_name="ادرس مقاله", max_length=200)
+    slug = models.SlugField(verbose_name="ادرس مقاله", max_length=200, unique=True)
     topics = models.ManyToManyField(Topics, verbose_name="تاپیک")
     body = models.TextField(verbose_name="محتوا", null=True, blank=True)
     thumbnail = models.ImageField(verbose_name="تصویر بند انگشتی", upload_to="images")
