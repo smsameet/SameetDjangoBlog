@@ -20,3 +20,4 @@
 - [x] creagin topics model and register to admin panel.
 - [x] config details template.
 - [x] config topics and show to templates.
+- [x] config topics view.

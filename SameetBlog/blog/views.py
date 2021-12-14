@@ -23,3 +23,10 @@ def blog(request):
         "articles": models.Article.objects.filter(status="P").order_by('-published')
     }
     return render(request, "blog/blog.html", context)
+
+def topics(request):
+    ''' this is function of the article topics. '''
+    context = {
+        "topics": models.Topics.objects.all()
+    }
+    return render(request, 'blog/topics.html', context)
