@@ -29,6 +29,8 @@
 	margin-left: auto;
 }
 #article .card img {
+	display: flex;
+	margin: auto;
 	padding: 20px;
 }
 #thumbnail img{
@@ -56,6 +58,9 @@
 #information *{
 
 	color: var(--HeaderColor);
+}
+#article .card .col-xl-3 {
+	margin: 0;
 }
 /* clases */
 .navbar {
