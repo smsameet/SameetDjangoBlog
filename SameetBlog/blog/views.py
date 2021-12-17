@@ -5,7 +5,7 @@ from . import models
 def home(request):
     ''' this is function of the blog home. '''
     context = {
-        "contents": models.HomeContent.objects.all().order_by('-published')
+        "contents": models.HomeContent.objects.all().order_by('-published'),
     }
     return render(request, 'blog/base.html', context)
 
@@ -20,7 +20,8 @@ def details(request, slug):
 def blog(request):
     ''' this is function of the site (blog)'''
     context = {
-        "articles": models.Article.objects.filter(status="P").order_by('-published')
+        "articles": models.Article.objects.filter(status="P").order_by('-published'),
+        "topics": models.Topics.objects.all()
     }
     return render(request, "blog/blog.html", context)
 
@@ -34,6 +35,7 @@ def topics(request):
 def topic(request, slug):
     ''' this is function of the topics. '''
     context = {
-        "topic": get_object_or_404(models.Topics, slug=slug)
+        "topic": get_object_or_404(models.Topics, slug=slug),
+        "topics": models.Topics.objects.all()
     }
     return render(request, "blog/topic.html", context)

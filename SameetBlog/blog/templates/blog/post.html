@@ -4,7 +4,7 @@
 	</div>
 	<div id="content">
 		<h1 id="ArticleTitle">{{ article.title }}</h1>
-		<p id="ArticleContent">{{ article.body }}</p>
+		<div id="ArticleContent">{{ article.body | safe }}</div>
 	</div>
 	<div id="information">
 		<p>اپدیت شده در : {{ article.created }}</p>

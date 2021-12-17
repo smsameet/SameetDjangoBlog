@@ -23,3 +23,4 @@
 - [x] config topics view.
 - [x] config topics url.
 - [x] creating topic view, urls, template.
+- [x] installing django-ckeditor.
