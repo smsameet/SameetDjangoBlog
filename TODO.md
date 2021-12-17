@@ -21,3 +21,4 @@
 - [x] config details template.
 - [x] config topics and show to templates.
 - [x] config topics view.
+- [x] config topics url.

@@ -2,16 +2,20 @@
 
 {% load static %}
 
-{% block title %}صفحه اصلی{% endblock %}
+{% block title %}صفحه اصلی {% endblock %}
 {% block body %}
 	{% block header %}{% include 'blog/header.html' %}{% endblock %}
 	{% block main %}
 		<div class="container">
-			<div id="main">
-				<h1 style="color: #d19a66; text-align: center; margin: 30px;">تاپیک ها</h2>
-				{% for topic in topics %}
-					<h2>{{ topic.title }}</h2>
-				{% endfor}
+			<div id="main" class="col-md-12 col-sm-12">
+				<h1 style="color: #d19a66; text-align: center; margin: 30px;">مقالات</h1>
+				<div id="tags" class="col-md-10" style="margin: auto;">
+					{% for topic in topics %}
+						<a href="{{ topic.slug }}">
+							<h2 class="topics">{{ topic.title }}</h2>
+						</a>
+					{% endfor %}
+				</div>
 			</div>
 		</div>
 	{% endblock %}
