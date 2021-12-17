@@ -22,3 +22,4 @@
 - [x] config topics and show to templates.
 - [x] config topics view.
 - [x] config topics url.
+- [x] creating topic view, urls, template.

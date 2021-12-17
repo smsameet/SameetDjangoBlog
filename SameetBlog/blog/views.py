@@ -30,3 +30,10 @@ def topics(request):
         "topics": models.Topics.objects.all()
     }
     return render(request, 'blog/topics.html', context)
+
+def topic(request, slug):
+    ''' this is function of the topics. '''
+    context = {
+        "topic": get_object_or_404(models.Topics, slug=slug)
+    }
+    return render(request, "blog/topic.html", context)

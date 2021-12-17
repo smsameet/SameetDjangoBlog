@@ -22,7 +22,7 @@ class Article(models.Model):
     )
     title = models.CharField(verbose_name="عنوان", max_length=200)
     slug = models.SlugField(verbose_name="ادرس مقاله", max_length=200, unique=True)
-    topics = models.ManyToManyField(Topics, verbose_name="تاپیک")
+    topics = models.ManyToManyField(Topics, verbose_name="تاپیک", related_name="articles")
     body = models.TextField(verbose_name="محتوا", null=True, blank=True)
     thumbnail = models.ImageField(verbose_name="تصویر بند انگشتی", upload_to="images")
     published = models.DateTimeField(verbose_name="زمان انتشار", default=timezone.now)
