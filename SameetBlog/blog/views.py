@@ -1,4 +1,5 @@
 from django.shortcuts import get_object_or_404, render
+from django.core.paginator import Paginator
 from . import models
 
 # Create your views here.
@@ -19,8 +20,12 @@ def details(request, slug):
 
 def blog(request):
     ''' this is function of the site (blog)'''
+    all_article = models.Article.objects.filter(status="P").order_by('-published')
+    paginator = Paginator(all_article, 10)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
     context = {
-        "articles": models.Article.objects.filter(status="P").order_by('-published'),
+        "articles": page_obj,
         "topics": models.Topics.objects.all()
     }
     return render(request, "blog/blog.html", context)

@@ -91,6 +91,18 @@
 .card-body p {
 	font-size: 1.2em;
 }
+#footer {
+  display: flex;
+}
+.pages {
+  color: var(--TextColor);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.pages:hover {
+  color: var(--TextColor);
+}
 /* elements */
 body {
 	margin: 0;
