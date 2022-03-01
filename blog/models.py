@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from ckeditor.fields import RichTextField
-from ckeditor_uploader.fields import RichTextUploadingField
+from tinymce.models import HTMLField
 
 # Create your models here.
 
@@ -25,7 +24,7 @@ class Article(models.Model):
     title = models.CharField(verbose_name="عنوان", max_length=200)
     slug = models.SlugField(verbose_name="ادرس مقاله", max_length=200, unique=True)
     topics = models.ManyToManyField(Topics, verbose_name="تاپیک", related_name="articles")
-    body = RichTextUploadingField(verbose_name="محتوا", null=True, blank=True)
+    body = HTMLField(verbose_name="محتوا", null=True, blank=True)
     thumbnail = models.ImageField(verbose_name="تصویر بند انگشتی", upload_to="images")
     published = models.DateTimeField(verbose_name="زمان انتشار", default=timezone.now)
     created = models.DateTimeField(auto_now=True)
