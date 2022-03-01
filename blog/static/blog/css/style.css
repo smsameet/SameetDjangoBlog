@@ -103,6 +103,9 @@
 .pages:hover {
   color: var(--TextColor);
 }
+#article .row {
+  align-items: center;
+}
 /* elements */
 body {
 	margin: 0;
