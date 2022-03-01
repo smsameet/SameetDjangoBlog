@@ -25,3 +25,4 @@
 - [x] creating topic view, urls, template.
 - [x] installing django-ckeditor.
 - [x] pagination
+- [ ] deploying the project in FANDOGH.
