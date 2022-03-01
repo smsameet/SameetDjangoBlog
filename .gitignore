@@ -117,3 +117,7 @@ dmypy.json
 # Media
 images/
 image/
+
+# fandogh
+.fandoghignore
+fandogh.yml
