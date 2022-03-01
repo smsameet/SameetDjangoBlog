@@ -124,3 +124,17 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid #fff;
 	margin-bottom: 20px;
 }
+code {
+  color: var(--TextColor);
+  width: 100%;
+  direction: ltr;
+  padding: 10px;
+  background-color: #32353d;
+  display: block;
+  border: 2px solid var(--Black);
+}
+#ArticleContent > h1, h2, h3, h4, h5, h6 {
+    padding: auto;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
