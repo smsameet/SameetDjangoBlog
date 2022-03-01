@@ -42,6 +42,7 @@ class HomeContent(models.Model):
     title = models.CharField(verbose_name="عنوان", max_length=200, null=True, blank=True)
     body = models.TextField(verbose_name="محتوا", max_length=250, null=True, blank=True)
     thumbnail = models.ImageField(verbose_name="تصویر بند انگشتی", upload_to="images")
+    thumbnail_link = models.CharField(verbose_name="لینک محتوا", max_length=300, null=True, blank=True)
     published = models.DateTimeField(verbose_name="زمان انتشار", default=timezone.now)
 
     def __str__(self):
